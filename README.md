@@ -15,11 +15,11 @@ Once you have all the files setup, build the docker image using
 
 Optionally you can fetch the pre built image using the following command:
 
-```docker pull pandasaurav/llms:latest```
+```docker pull cloudcodeai/mistral-quantized-api```
 
 and run the api using
 ```
-docker run -p 8080:8000 mistral-api
+docker run -p 8000:8000 mistral-api
 ```
 
 ## API
@@ -28,7 +28,7 @@ Inference runs at /infer endpoint.
 
 Sample Request:
 ```
-URL : http://localhost:8080/infer
+URL : http://localhost:8000/infer
 
 Input: 
 {
